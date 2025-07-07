@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Arcade Shooter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen">
+        <h1 class="game-title">RETRO SPACE SHOOTER</h1>
+        <button id="start-button" class="pixel-button">Best Education B.V.</button>
+        <div id="difficulty-selection">
+            <button class="pixel-button" id="easy">Easy</button>
+            <button class="pixel-button" id="medium">Medium</button>
+            <button class="pixel-button" id="hard">Hard</button>
+        </div>
+    </div>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" class="hidden"></canvas>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="screen hidden">
+        <h1 class="game-title">GAME OVER</h1>
+        <p id="final-score" class="pixel-text"></p>
+        <div id="initials-input-container" class="hidden">
+            <p class="pixel-text">Enter Your Initials:</p>
+            <input type="text" id="player-initials" maxlength="3" class="pixel-button" />
+            <button id="submit-score" class="pixel-button">Submit</button>
+        </div>
+        <button id="restart-button" class="pixel-button">RESTART</button>
+
+        <!-- Leaderboard -->
+        <h2 class="pixel-text" style="margin-top: 30px;">HIGH SCORES</h2>
+        <ul id="leaderboard-list" class="leaderboard"></ul>
+    </div>
+
+    <script src="game.js" type="module"></script>
+</body>
+
+</html>

@@ -65,3 +65,15 @@ xdg-open index.html # Linux
 │   └── alien.png       # Vijand sprite
 └── README.md           # Dit bestand
 
+
+<!-- developer-journey.md -->
+# 🛣️ Development Journey Timeline
+
+```mermaid
+journey
+    title Kain's Development Journey
+    section 2021-2023
+      Bit Academy: 5: Front-end Focus
+      Personal Projects: 4: Game Development
+    section 2023
+      Retro Space Shooter: 8: Released
